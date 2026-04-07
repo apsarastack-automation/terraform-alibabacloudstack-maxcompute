@@ -1,4 +1,3 @@
-=====
 # Alibaba Cloud MaxCompute Terraform Module
 
 This module creates **MaxCompute projects, CUs (Compute Units), and users** on Alibaba Cloud Stack and optionally configures **VPC network attachments**.
