@@ -1,0 +1,31 @@
+{
+  "project_name": {
+    "description": "The name of the MaxCompute project to create.",
+    "type": "string",
+    "optional": false,
+    "i18n": {
+      "zh-Hans": "要创建的MaxCompute项目名称。",
+      "en-US": "The name of the MaxCompute project to create."
+    }
+  },
+  "vpc_id": {
+    "description": "The ID of an existing VPC to attach.",
+    "type": "string",
+    "optional": true,
+    "i18n": {
+      "zh-Hans": "要附加的现有VPC的ID。",
+      "en-US": "The ID of an existing VPC to attach."
+    },
+    "default": ""
+  },
+  "cu_num": {
+    "description": "The number of CUs for the MaxCompute CU.",
+    "type": "number",
+    "optional": true,
+    "i18n": {
+      "zh-Hans": "MaxCompute CU的数量。",
+      "en-US": "The number of CUs for the MaxCompute CU."
+    },
+    "default": "2"
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "project_name": {
+    "description": "The name of the MaxCompute project.",
+    "type": "string",
+    "optional": false,
+    "i18n": {
+      "zh-Hans": "MaxCompute项目的名称。",
+      "en-US": "The name of the MaxCompute project."
+    }
+  },
+  "create_user": {
+    "description": "Whether to create a new MaxCompute user.",
+    "type": "bool",
+    "optional": true,
+    "i18n": {
+      "zh-Hans": "是否创建新的MaxCompute用户。",
+      "en-US": "Whether to create a new MaxCompute user."
+    },
+    "default": "true"
+  },
+  "user_name": {
+    "description": "The name of the MaxCompute user to create.",
+    "type": "string",
+    "optional": true,
+    "i18n": {
+      "zh-Hans": "要创建的MaxCompute用户名称。",
+      "en-US": "The name of the MaxCompute user to create."
+    },
+    "default": ""
+  },
+  "user_description": {
+    "description": "The description of the MaxCompute user.",
+    "type": "string",
+    "optional": true,
+    "i18n": {
+      "zh-Hans": "MaxCompute用户的描述。",
+      "en-US": "The description of the MaxCompute user."
+    },
+    "default": ""
+  },
+  "create_cu": {
+    "description": "Whether to create a new MaxCompute CU.",
+    "type": "bool",
+    "optional": true,
+    "i18n": {
+      "zh-Hans": "是否创建新的MaxCompute CU。",
+      "en-US": "Whether to create a new MaxCompute CU."
+    },
+    "default": "true"
+  },
+  "cu_name": {
+    "description": "The name of the MaxCompute CU.",
+    "type": "string",
+    "optional": true,
+    "i18n": {
+      "zh-Hans": "MaxCompute CU的名称。",
+      "en-US": "The name of the MaxCompute CU."
+    },
+    "default": ""
+  },
+  "cu_num": {
+    "description": "The number of CUs for the MaxCompute CU.",
+    "type": "number",
+    "optional": true,
+    "i18n": {
+      "zh-Hans": "MaxCompute CU的数量。",
+      "en-US": "The number of CUs for the MaxCompute CU."
+    },
+    "default": "2"
+  },
+  "cluster_name": {
+    "description": "The cluster name for the MaxCompute CU.",
+    "type": "string",
+    "optional": true,
+    "i18n": {
+      "zh-Hans": "MaxCompute CU的集群名称。",
+      "en-US": "The cluster name for the MaxCompute CU."
+    },
+    "default": ""
+  },
+  "disk_size": {
+    "description": "The disk size of the MaxCompute project.",
+    "type": "string",
+    "optional": true,
+    "i18n": {
+      "zh-Hans": "MaxCompute项目的磁盘大小。",
+      "en-US": "The disk size of the MaxCompute project."
+    },
+    "default": "50"
+  },
+  "enable_external_table": {
+    "description": "Whether to enable external table (joint computing).",
+    "type": "bool",
+    "optional": true,
+    "i18n": {
+      "zh-Hans": "是否启用外部表（联合计算）。",
+      "en-US": "Whether to enable external table (joint computing)."
+    },
+    "default": "true"
+  },
+  "attach_vpc": {
+    "description": "Whether to attach a VPC to the MaxCompute project.",
+    "type": "bool",
+    "optional": true,
+    "i18n": {
+      "zh-Hans": "是否将VPC附加到MaxCompute项目。",
+      "en-US": "Whether to attach a VPC to the MaxCompute project."
+    },
+    "default": "false"
+  },
+  "vpc_id": {
+    "description": "The ID of an existing VPC to attach (when attach_vpc=true).",
+    "type": "string",
+    "optional": true,
+    "i18n": {
+      "zh-Hans": "要附加的现有VPC的ID（当attach_vpc=true时）。",
+      "en-US": "The ID of an existing VPC to attach (when attach_vpc is true)."
+    },
+    "default": ""
+  },
+  "core_arch": {
+    "description": "The core architecture of the MaxCompute project.",
+    "type": "string",
+    "optional": true,
+    "i18n": {
+      "zh-Hans": "MaxCompute项目的核心架构。",
+      "en-US": "The core architecture of the MaxCompute project."
+    },
+    "default": ""
+  },
+  "cpu_type": {
+    "description": "The CPU type of the MaxCompute project.",
+    "type": "string",
+    "optional": true,
+    "i18n": {
+      "zh-Hans": "MaxCompute项目的CPU类型。",
+      "en-US": "The CPU type of the MaxCompute project."
+    },
+    "default": ""
+  },
+  "user_id": {
+    "description": "The id of the MaxCompute User.",
+    "type": "string",
+    "optional": true,
+    "i18n": {
+      "zh-Hans": "MaxCompute 用户的 ID。",
+      "en-US": "The ID of the MaxCompute user."
+    },
+    "default": ""
+  },
+  "cu_id": {
+    "description": "The id of the MaxCompute CU.",
+    "type": "string",
+    "optional": true,
+    "i18n": {
+      "zh-Hans": "MaxCompute CU 的 ID。",
+      "en-US": "The ID of the MaxCompute CU."
+    },
+    "default": ""
+  }
+}

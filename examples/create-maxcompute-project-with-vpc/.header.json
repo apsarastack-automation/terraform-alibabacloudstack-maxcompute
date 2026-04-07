@@ -1,0 +1,14 @@
+{
+  "title": {
+    "zh-Hans": "创建带VPC的MaxCompute项目",
+    "en-US": "Create MaxCompute Project with VPC"
+  },
+  "overview": {
+    "zh-Hans": "此示例演示如何创建MaxCompute项目并将其附加到VPC。它会创建新的VPC资源。",
+    "en-US": "This example demonstrates how to create a MaxCompute project and attach it to a VPC. It creates new VPC resources."
+  },
+  "description": {
+    "zh-Hans": "创建MaxCompute项目并附加到VPC的示例",
+    "en-US": "Example for creating MaxCompute project with VPC attachment"
+  }
+}

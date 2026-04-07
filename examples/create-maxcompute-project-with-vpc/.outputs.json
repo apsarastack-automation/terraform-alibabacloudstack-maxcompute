@@ -1,0 +1,37 @@
+{
+  "project_id": {
+    "description": "The ID of the MaxCompute project.",
+    "i18n": {
+      "zh-Hans": "MaxCompute项目的ID。",
+      "en-US": "The ID of the MaxCompute project."
+    }
+  },
+  "project_name": {
+    "description": "The name of the MaxCompute project.",
+    "i18n": {
+      "zh-Hans": "MaxCompute项目的名称。",
+      "en-US": "The name of the MaxCompute project."
+    }
+  },
+  "user_id": {
+    "description": "The ID of the MaxCompute user.",
+    "i18n": {
+      "zh-Hans": "MaxCompute用户的ID。",
+      "en-US": "The ID of the MaxCompute user."
+    }
+  },
+  "cu_id": {
+    "description": "The ID of the MaxCompute CU.",
+    "i18n": {
+      "zh-Hans": "MaxCompute CU的ID。",
+      "en-US": "The ID of the MaxCompute CU."
+    }
+  },
+  "vpc_id": {
+    "description": "The ID of the VPC.",
+    "i18n": {
+      "zh-Hans": "VPC的ID。",
+      "en-US": "The ID of the VPC."
+    }
+  }
+}

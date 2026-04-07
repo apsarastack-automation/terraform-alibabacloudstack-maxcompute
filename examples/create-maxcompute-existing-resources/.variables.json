@@ -1,0 +1,29 @@
+{
+  "project_name": {
+    "description": "The name of the MaxCompute project to create.",
+    "type": "string",
+    "optional": false,
+    "i18n": {
+      "zh-Hans": "要创建的MaxCompute项目名称。",
+      "en-US": "The name of the MaxCompute project to create."
+    }
+  },
+  "user_id": {
+    "description": "The ID of an existing MaxCompute user.",
+    "type": "string",
+    "optional": false,
+    "i18n": {
+      "zh-Hans": "现有MaxCompute用户的ID。",
+      "en-US": "The ID of an existing MaxCompute user."
+    }
+  },
+  "cu_id": {
+    "description": "The ID of an existing MaxCompute CU.",
+    "type": "string",
+    "optional": false,
+    "i18n": {
+      "zh-Hans": "现有MaxCompute CU的ID。",
+      "en-US": "The ID of an existing MaxCompute CU."
+    }
+  }
+}

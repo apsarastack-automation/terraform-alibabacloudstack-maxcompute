@@ -1,0 +1,14 @@
+{
+  "title": {
+    "zh-Hans": "使用现有资源创建MaxCompute项目",
+    "en-US": "Create MaxCompute Project with Existing Resources"
+  },
+  "overview": {
+    "zh-Hans": "此示例演示如何使用现有的用户和CU创建MaxCompute项目。",
+    "en-US": "This example demonstrates how to create a MaxCompute project using existing user and CU."
+  },
+  "description": {
+    "zh-Hans": "使用现有资源创建MaxCompute项目的示例",
+    "en-US": "Example for creating MaxCompute project with existing resources"
+  }
+}

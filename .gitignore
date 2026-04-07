@@ -1,0 +1,10 @@
+/.project
+/.settings
+
+**/.DS_Store
+
+**/.terraform
+**/terraform.log
+**/.terraform.lock.hcl
+**/*.tfstate
+**/.provider_schema.json

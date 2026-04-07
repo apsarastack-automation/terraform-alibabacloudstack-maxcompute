@@ -1,0 +1,14 @@
+{
+  "title": {
+    "zh-Hans": "MaxCompute项目模块",
+    "en-US": "MaxCompute Project Module"
+  },
+  "overview": {
+    "zh-Hans": "该模块用于在阿里云 Stack 上创建MaxCompute项目、CU和用户，支持VPC配置和配额管理。",
+    "en-US": "This module is used to create MaxCompute projects, CUs and users on Alibaba Cloud Stack, supporting VPC configuration and quota management."
+  },
+  "description": {
+    "zh-Hans": "用于创建MaxCompute项目、CU和用户的Terraform模块",
+    "en-US": "Terraform module for creating MaxCompute projects, CUs and users"
+  }
+}

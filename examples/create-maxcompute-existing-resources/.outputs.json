@@ -1,0 +1,16 @@
+{
+  "project_id": {
+    "description": "The ID of the MaxCompute project.",
+    "i18n": {
+      "zh-Hans": "MaxCompute项目的ID。",
+      "en-US": "The ID of the MaxCompute project."
+    }
+  },
+  "project_name": {
+    "description": "The name of the MaxCompute project.",
+    "i18n": {
+      "zh-Hans": "MaxCompute项目的名称。",
+      "en-US": "The name of the MaxCompute project."
+    }
+  }
+}
