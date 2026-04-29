@@ -3,20 +3,14 @@ variable "project_name" {
   type        = string
 }
 
-variable "create_user" {
-  description = "Whether to create a new MaxCompute user."
-  type        = bool
-  default     = true
-}
-
-variable "user_name" {
-  description = "The name of the MaxCompute user to create."
+variable "user_id" {
+  description = "The ID of the MaxCompute user."
   type        = string
   default     = ""
 }
 
-variable "user_description" {
-  description = "The description of the MaxCompute user."
+variable "user_pk" {
+  description = "The PK of the MaxCompute user."
   type        = string
   default     = ""
 }

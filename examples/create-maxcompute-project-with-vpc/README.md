@@ -34,7 +34,7 @@ This example creates a new MaxCompute project with user and CU, and optionally a
 
 | Name | Version |
 |------|---------|
-| alibabacloudstack | >= 3.18.24, < 3.19.0 |
+| alibabacloudstack | >= 3.18.28, < 3.19.0 |
 
 ## Module
 

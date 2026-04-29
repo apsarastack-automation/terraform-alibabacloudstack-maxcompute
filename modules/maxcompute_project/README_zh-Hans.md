@@ -1,7 +1,7 @@
 # 阿里云 MaxCompute Terraform 模块
 
-该模块用于在阿里云 Stack 上管理 MaxCompute 项目、CU（计算单元）和用户，支持：
-- **创建新的 MaxCompute 项目** 并配置关联的 CU 和用户
+该模块用于在阿里云 Stack 上管理 MaxCompute 项目和 CU（计算单元），支持：
+- **创建新的 MaxCompute 项目** 并配置关联的 CU
 - **可选配置 VPC 网络附件**（复用现有 VPC 或自动创建 VPC）
 - **灵活的配置选项** 用于磁盘大小、外部表和计算资源
 
@@ -9,7 +9,6 @@
 
 * [alibabacloudstack_maxcompute_project](https://registry.terraform.io/providers/aliyun/alibabacloudstack/latest/docs/resources/maxcompute_project)
 * [alibabacloudstack_maxcompute_cu](https://registry.terraform.io/providers/aliyun/alibabacloudstack/latest/docs/resources/maxcompute_cu)
-* [alibabacloudstack_maxcompute_user](https://registry.terraform.io/providers/aliyun/alibabacloudstack/latest/docs/resources/maxcompute_user)
 * [alibabacloudstack_vpc_vpc](https://registry.terraform.io/providers/aliyun/alibabacloudstack/latest/docs/resources/vpc_vpc)
 
 ## 使用方法
@@ -24,15 +23,13 @@ module "maxcompute" {
 }
 ```
 
-### 场景 2：创建带自定义 CU 和用户的 MaxCompute 项目
+### 场景 2：创建带自定义 CU 的 MaxCompute 项目
 
 ```hcl
 module "maxcompute" {
   source = "./terraform-alibabacloudstack-maxcompute"
 
   project_name     = "my-maxcompute-project"
-  user_name        = "custom-user"
-  user_description = "Custom user for MaxCompute project"
   cu_name          = "custom-cu"
   cu_num           = 4
   cluster_name     = "HYBRIDODPSCLUSTER-A-20210520-07B0"
@@ -78,16 +75,13 @@ module "maxcompute" {
 
 | 名称 | 版本 |
 |------|------|
-| alibabacloudstack | >= 3.18.24, < 3.19.0 |
+| alibabacloudstack | >= 3.18.28, < 3.19.0 |
 
 ## 输入变量
 
 | 名称 | 描述 | 类型 | 默认值 | 必需 |
 |------|------|------|--------|------|
 | **project_name** | **新 MaxCompute 项目的名称** | `string` | — | 是 |
-| create_user | 是否创建新的 MaxCompute 用户 | `bool` | `true` | 否 |
-| user_name | MaxCompute 用户的名称（默认为 project_name） | `string` | `""` | 否 |
-| user_description | MaxCompute 用户的描述 | `string` | `""` | 否 |
 | create_cu | 是否创建新的 MaxCompute CU | `bool` | `true` | 否 |
 | cu_name | MaxCompute CU 的名称（默认为 project_name） | `string` | `""` | 否 |
 | cu_num | MaxCompute CU 的数量 | `number` | `2` | 否 |

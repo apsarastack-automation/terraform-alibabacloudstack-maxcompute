@@ -4,12 +4,13 @@ run "validate" {
     source = "../"
   }
   variables {
-    project_name          = "tfmaxcompute5"
-    user_description      = "Test MaxCompute project"
+    project_name          = "tfmaxcompute_test_001"
     cu_num                = 2
     disk_size             = "50"
     enable_external_table = true
     attach_vpc            = true
+    user_id      = "2"
+    user_pk      = "1638677456903376"
   }
 
   assert {
@@ -18,13 +19,8 @@ run "validate" {
   }
 
   assert {
-    condition     = output.project_name == "tfmaxcompute5"
+    condition     = output.project_name == "tfmaxcompute_test_001"
     error_message = "Project name should match the input."
-  }
-
-  assert {
-    condition     = output.user_id != ""
-    error_message = "User ID should not be empty."
   }
 
   assert {

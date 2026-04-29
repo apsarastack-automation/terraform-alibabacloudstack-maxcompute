@@ -5,7 +5,6 @@ This module creates **MaxCompute projects, CUs (Compute Units), and users** on A
 ## Features
 
 - Creates a new MaxCompute project
-- Automatically creates a MaxCompute user (optional)
 - Automatically creates a MaxCompute CU (optional)
 - Optional: Attaches the MaxCompute project to a VPC
   - Supports reusing an existing VPC (via `vpc_id`)
@@ -75,7 +74,7 @@ module "maxcompute" {
 
 | Name              | Version                |
 |-------------------|------------------------|
-| alibabacloudstack | >= 3.18.24, < 3.19.0   |
+| alibabacloudstack | >= 3.18.28, < 3.19.0   |
 
 ## Module Variables
 

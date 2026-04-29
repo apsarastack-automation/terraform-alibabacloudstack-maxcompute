@@ -38,7 +38,7 @@
 
 | 名称 | 版本 |
 |------|------|
-| alibabacloudstack | >= 3.18.24, < 3.19.0 |
+| alibabacloudstack | >= 3.18.28, < 3.19.0 |
 
 ## 模块依赖
 
@@ -51,8 +51,6 @@
 | 名称 | 描述 | 类型 | 默认值 | 必需 |
 |------|------|------|--------|------|
 | `project_name` | **新 MaxCompute 项目的名称** | `string` | - | 是 |
-| `user_id` | **现有 MaxCompute 用户的 ID** | `string` | - | 是 |
-| `user_pk` | **现有 MaxCompute 用户的 PK** | `string` | - | 是 |
 | `cu_id` | **现有 MaxCompute CU 的 ID** | `string` | - | 是 |
 
 ## 输出变量

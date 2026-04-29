@@ -14,3 +14,15 @@ variable "cu_num" {
   type        = number
   default     = 2
 }
+
+variable "user_id" {
+  description = "The ID of the MaxCompute user."
+  type        = string
+  default     = ""
+}
+
+variable "user_pk" {
+  description = "The PK of the MaxCompute user."
+  type        = string
+  default     = ""
+}

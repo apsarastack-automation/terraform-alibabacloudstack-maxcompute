@@ -8,11 +8,6 @@ output "project_name" {
   value       = module.maxcompute_project.project_name
 }
 
-output "user_id" {
-  description = "The ID of the MaxCompute user."
-  value       = module.maxcompute_project.user_id
-}
-
 output "cu_id" {
   description = "The ID of the MaxCompute CU."
   value       = module.maxcompute_project.cu_id

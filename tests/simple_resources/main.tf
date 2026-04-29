@@ -2,11 +2,6 @@ data "alibabacloudstack_maxcompute_clusters" "existing" {
   name_regex = "HYBRIDODPSCLUSTER-.*"
 }
 
-resource "alibabacloudstack_maxcompute_user" "existing" {
-  user_name   = "${var.name}_user"
-  description = "${var.name} description"
-}
-
 # --- MaxCompute CU Resource ---
 
 resource "alibabacloudstack_maxcompute_cu" "existing" {

@@ -2,9 +2,8 @@ module "default" {
   source = "./modules/maxcompute_project"
 
   project_name          = var.project_name
-  create_user           = var.create_user
-  user_name             = var.user_name
-  user_description      = var.user_description
+  user_id               = var.user_id
+  user_pk               = var.user_pk
   create_cu             = var.create_cu
   cu_name               = var.cu_name
   cu_num                = var.cu_num

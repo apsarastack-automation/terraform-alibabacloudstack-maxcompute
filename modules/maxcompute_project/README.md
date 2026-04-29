@@ -9,7 +9,6 @@ This module manages Alibaba Cloud MaxCompute projects, CUs (Compute Units), and 
 
 * [alibabacloudstack_maxcompute_project](https://registry.terraform.io/providers/aliyun/alibabacloudstack/latest/docs/resources/maxcompute_project)
 * [alibabacloudstack_maxcompute_cu](https://registry.terraform.io/providers/aliyun/alibabacloudstack/latest/docs/resources/maxcompute_cu)
-* [alibabacloudstack_maxcompute_user](https://registry.terraform.io/providers/aliyun/alibabacloudstack/latest/docs/resources/maxcompute_user)
 * [alibabacloudstack_vpc_vpc](https://registry.terraform.io/providers/aliyun/alibabacloudstack/latest/docs/resources/vpc_vpc)
 
 ## Usage Examples
@@ -78,7 +77,7 @@ module "maxcompute" {
 
 | Name | Version |
 |------|---------|
-| alibabacloudstack | >= 3.18.24, < 3.19.0 |
+| alibabacloudstack | >= 3.18.28, < 3.19.0 |
 
 ## Input Variables
 

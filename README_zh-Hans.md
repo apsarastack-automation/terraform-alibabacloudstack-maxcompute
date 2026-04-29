@@ -5,7 +5,6 @@
 ## 功能特性
 
 - 创建新的 MaxCompute 项目
-- 自动创建 MaxCompute 用户（可选）
 - 自动创建 MaxCompute CU（可选）
 - 可选：将 MaxCompute 项目附加到 VPC
   - 支持复用现有 VPC（通过 `vpc_id`）
@@ -23,15 +22,13 @@ module "maxcompute" {
 }
 ```
 
-### 高级用法：自定义 CU 和用户
+### 高级用法：自定义 CU
 
 ```hcl
 module "maxcompute" {
   source = "<Module Path>"
 
   project_name     = "my-maxcompute-project"
-  user_name        = "custom-user"
-  user_description = "Custom user for MaxCompute project"
   cu_name          = "custom-cu"
   cu_num           = 4
   cluster_name     = "HYBRIDODPSCLUSTER-A-20210520-07B0"
@@ -75,7 +72,7 @@ module "maxcompute" {
 
 | 名称 | 版本 |
 |------|------|
-| alibabacloudstack | >= 3.18.24, < 3.19.0 |
+| alibabacloudstack | >= 3.18.28, < 3.19.0 |
 
 ## 模块变量
 
@@ -84,9 +81,6 @@ module "maxcompute" {
 | 名称 | 描述 | 类型 | 默认值 | 必需 |
 |------|------|------|--------|------|
 | `project_name` | MaxCompute 项目名称 | `string` | — | 是 |
-| `create_user` | 是否创建新的 MaxCompute 用户 | `bool` | `true` | 否 |
-| `user_name` | MaxCompute 用户名称（默认为 project_name） | `string` | `""` | 否 |
-| `user_description` | MaxCompute 用户描述 | `string` | `""` | 否 |
 | `create_cu` | 是否创建新的 MaxCompute CU | `bool` | `true` | 否 |
 | `cu_name` | MaxCompute CU 名称（默认为 project_name） | `string` | `""` | 否 |
 | `cu_num` | CU 数量 | `number` | `2` | 否 |
@@ -107,8 +101,6 @@ module "maxcompute" {
 |------|------|
 | `project_id` | 创建的 MaxCompute 项目 ID |
 | `project_name` | 创建的 MaxCompute 项目名称 |
-| `user_id` | MaxCompute 用户的 ID |
-| `user_pk` | MaxCompute 用户的 PK |
 | `cu_id` | MaxCompute CU 的 ID |
 | `vpc_id` | 关联的 VPC ID |
 
