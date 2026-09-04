@@ -13,20 +13,6 @@
       "en-US": "The name of the MaxCompute project."
     }
   },
-  "user_id": {
-    "description": "The ID of the MaxCompute user.",
-    "i18n": {
-      "zh-Hans": "MaxCompute用户的ID。",
-      "en-US": "The ID of the MaxCompute user."
-    }
-  },
-  "user_pk": {
-    "description": "The PK of the MaxCompute user.",
-    "i18n": {
-      "zh-Hans": "MaxCompute用户的PK。",
-      "en-US": "The PK of the MaxCompute user."
-    }
-  },
   "cu_id": {
     "description": "The ID of the MaxCompute CU.",
     "i18n": {

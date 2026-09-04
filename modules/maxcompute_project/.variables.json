@@ -8,36 +8,6 @@
       "en-US": "The name of the MaxCompute project."
     }
   },
-  "create_user": {
-    "description": "Whether to create a new MaxCompute user.",
-    "type": "bool",
-    "optional": true,
-    "i18n": {
-      "zh-Hans": "是否创建新的MaxCompute用户。",
-      "en-US": "Whether to create a new MaxCompute user."
-    },
-    "default": "true"
-  },
-  "user_name": {
-    "description": "The name of the MaxCompute user to create.",
-    "type": "string",
-    "optional": true,
-    "i18n": {
-      "zh-Hans": "要创建的MaxCompute用户名称。",
-      "en-US": "The name of the MaxCompute user to create."
-    },
-    "default": ""
-  },
-  "user_description": {
-    "description": "The description of the MaxCompute user.",
-    "type": "string",
-    "optional": true,
-    "i18n": {
-      "zh-Hans": "MaxCompute用户的描述。",
-      "en-US": "The description of the MaxCompute user."
-    },
-    "default": ""
-  },
   "create_cu": {
     "description": "Whether to create a new MaxCompute CU.",
     "type": "bool",
@@ -139,14 +109,17 @@
     "default": ""
   },
   "user_id": {
-    "description": "The id of the MaxCompute User.",
+    "description": "The ID of the MaxCompute user.",
     "type": "string",
-    "optional": true,
+    "optional": false,
     "i18n": {
       "zh-Hans": "MaxCompute 用户的 ID。",
       "en-US": "The ID of the MaxCompute user."
     },
-    "default": ""
+    "i18n_old": {
+      "zh-Hans": "MaxCompute 用户的 ID。",
+      "en-US": "The ID of the MaxCompute user."
+    }
   },
   "cu_id": {
     "description": "The id of the MaxCompute CU.",
@@ -157,5 +130,14 @@
       "en-US": "The ID of the MaxCompute CU."
     },
     "default": ""
+  },
+  "user_pk": {
+    "description": "The PK of the MaxCompute user.",
+    "type": "string",
+    "optional": false,
+    "i18n": {
+      "zh-Hans": "MaxCompute 用户的主键。",
+      "en-US": "The primary key of the MaxCompute user."
+    }
   }
 }
