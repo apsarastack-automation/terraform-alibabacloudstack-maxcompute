@@ -115,10 +115,6 @@
     "i18n": {
       "zh-Hans": "MaxCompute 用户的 ID。",
       "en-US": "The ID of the MaxCompute user."
-    },
-    "i18n_old": {
-      "zh-Hans": "MaxCompute 用户的 ID。",
-      "en-US": "The ID of the MaxCompute user."
     }
   },
   "cu_id": {
