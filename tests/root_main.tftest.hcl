@@ -9,8 +9,8 @@ run "validate" {
     disk_size             = "50"
     enable_external_table = true
     attach_vpc            = true
-    user_id      = "2"
-    user_pk      = "1638677456903376"
+    user_id      = "5106"
+    user_pk      = "1583089388453681"
   }
 
   assert {

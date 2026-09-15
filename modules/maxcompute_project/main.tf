@@ -1,7 +1,7 @@
 # --- Data Sources ---
 
 data "alibabacloudstack_maxcompute_clusters" "default" {
-  name_regex = "HYBRIDODPSCLUSTER-.*"
+  name_regex = "HYBRIDODPS.*CLUSTER-.*"
 }
 
 data "alibabacloudstack_vpc_vpcs" "default" {

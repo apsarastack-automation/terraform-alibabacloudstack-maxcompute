@@ -16,8 +16,8 @@ run "validate" {
   variables {
     project_name = "tfmaxcompute_test_002"
     cu_id        = run.setup_resources.cu_id
-    user_id      = "2"
-    user_pk      = "1638677456903376"
+    user_id      = "5106"
+    user_pk      = "1583089388453681"
   }
   assert {
     condition     = output.project_id != ""

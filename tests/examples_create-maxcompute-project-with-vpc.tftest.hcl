@@ -17,8 +17,8 @@ run "validate" {
     project_name = "tfmaxcompute_test_003"
     vpc_id       = run.setup_vpc.vpc_id
     cu_num       = 2
-    user_id      = "2"
-    user_pk      = "1638677456903376"
+    user_id      = "5106"
+    user_pk      = "1583089388453681"
   }
   assert {
     condition     = output.project_id != ""

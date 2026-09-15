@@ -1,5 +1,5 @@
 data "alibabacloudstack_maxcompute_clusters" "existing" {
-  name_regex = "HYBRIDODPSCLUSTER-.*"
+  name_regex = "HYBRIDODPS.*CLUSTER-.*"
 }
 
 # --- MaxCompute CU Resource ---
