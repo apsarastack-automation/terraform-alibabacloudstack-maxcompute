@@ -4,6 +4,15 @@ data "alibabacloudstack_maxcompute_clusters" "default" {
   name_regex = "HYBRIDODPS.*CLUSTER-.*"
 }
 
+# Guard against non-deterministic cluster resolution: name_regex may match
+# multiple clusters, and picking [0] could drift between plans.
+check "single_maxcompute_cluster_match" {
+  assert {
+    condition     = var.cluster_name != "" || length(data.alibabacloudstack_maxcompute_clusters.default.clusters) <= 1
+    error_message = "name_regex 'HYBRIDODPS.*CLUSTER-.*' matched ${length(data.alibabacloudstack_maxcompute_clusters.default.clusters)} clusters; cluster auto-detection is non-deterministic. Set var.cluster_name to a specific cluster."
+  }
+}
+
 data "alibabacloudstack_vpc_vpcs" "default" {
   ids = [coalesce(var.vpc_id, "fake_id")]
 }
